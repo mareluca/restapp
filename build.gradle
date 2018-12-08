@@ -23,11 +23,14 @@ repositories {
     mavenCentral()
 }
 
-
 dependencies {
-    implementation('org.springframework.boot:spring-boot-starter-data-mongodb')
+   // implementation('org.springframework.boot:spring-boot-starter-data-mongodb')
     implementation('org.springframework.boot:spring-boot-starter-web')
-    runtimeOnly('org.postgresql:postgresql')
+   // runtimeOnly('org.postgresql:postgresql')
     compileOnly('org.projectlombok:lombok')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    runtime group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '2.1.1.RELEASE'
+    runtime group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.1.1.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.1.1.RELEASE'
 }
