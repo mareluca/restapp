@@ -1,11 +1,11 @@
 package com.project.restapp.facade;
 
-import com.project.restapp.model.Person;
+import com.project.restapp.model.PersonDto;
 
 import java.util.List;
 
 public interface FacadePerson {
 
-    List<Person> getPersons();
+    List<PersonDto> getPersons();
 
 }

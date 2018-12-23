@@ -1,6 +1,6 @@
 package com.project.restapp.facade;
 
-import com.project.restapp.model.Person;
+import com.project.restapp.model.PersonDto;
 import com.project.restapp.service.ServicePerson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,7 +18,7 @@ public class FacadePersonImpl implements FacadePerson{
     }
 
     @Override
-    public List<Person> getPersons() {
+    public List<PersonDto> getPersons() {
 
         return servicePerson.getPersons();
     }

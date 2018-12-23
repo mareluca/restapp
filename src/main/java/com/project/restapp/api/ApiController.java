@@ -21,13 +21,11 @@ public class ApiController {
 
     @Autowired
     ApiController(final FacadePerson facadePerson) {
-
         this.facadePerson = facadePerson;
     }
 
     @GetMapping(value = "/persons")
     public ResponseEntity<Object> getPersons() {
-
         log.info("Get all persons - controller at " + new Date().toString());
 
         return new ResponseEntity<>(facadePerson.getPersons(), HttpStatus.OK);

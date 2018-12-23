@@ -1,12 +1,12 @@
 package com.project.restapp.service;
 
 
-import com.project.restapp.model.Person;
+import com.project.restapp.model.PersonDto;
 
 import java.util.List;
 
 public interface ServicePerson {
 
-    List<Person> getPersons();
+    List<PersonDto> getPersons();
 
 }

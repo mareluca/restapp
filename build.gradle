@@ -33,4 +33,6 @@ dependencies {
     runtime group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '2.1.1.RELEASE'
     runtime group: 'org.springframework.boot', name: 'spring-boot-starter-actuator', version: '2.1.1.RELEASE'
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.1.1.RELEASE'
+    compile group: 'net.sf.dozer', name: 'dozer', version: '5.5.1'
+
 }
